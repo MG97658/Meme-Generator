@@ -17,7 +17,7 @@
         <!--Meme Preview -->
         <div class="meme-container">
             <div class="meme">
-                <img src="placeholder.jpg" alt="meme">
+                <img id="memeImage" src="https://i.imgflip.com/1ur9b0.jpg">
 
                 <h2 class="top-text">TOP TEXT</h2>
                 <h2 class="bottom-text">BOTTOM TEXT</h2>
@@ -26,17 +26,19 @@
 
         <!--Controls -->
         <div class="controls">
-            <input type="text" placeholder="Top text">
-            <input type="text" placeholder="Bottom text">
+            <input id="topInput" type="text" placeholder="Top text">
+            <input id="bottomInput" type="text" placeholder="Bottom text">
 
-            <selcet>
-                <option>Distracted Boyfriend</option>
-                <option>Drake Meme</option>
-                <option>One Does Not Simply</option>
-            </selcet>
+        <select id="memeSelector">
+            <option value="https://i.imgflip.com/1ur9b0.jpg">Distracted Boyfriend</option>
+            <option value="https://i.imgflip.com/30b1gx.jpg">Drake Hotline</option>
+            <option value="https://i.imgflip.com/1ihzfe.jpg">One Does Not Simply</option>
+        </select>
 
-            <button>Generate Meme</button>
+            <button id="randomBtn">Random Meme 🎲</button>
+            <button id="downloadBtn">Download Meme ⬇️</button>
         </div>
     </main>
+<script src="script.js"></script>
 </body>
 </html>
